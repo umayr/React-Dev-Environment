@@ -1,5 +1,5 @@
 # React-Dev-Environment
-##### Support Linux and OSX. Seek alternitives for Windows
+##### Support Linux and OSX. Seek alternatives for Windows
 
 React is very powerful front end development platform made by facebook. 
 This environemt is all ready for you to start developing with React Just follow these steps:
