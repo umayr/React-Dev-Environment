@@ -1,5 +1,6 @@
 var React = require('react');
-<<<<<<< HEAD
+
+
 
 var ListItem = React.createClass({
     render: function() {
