@@ -19018,7 +19018,6 @@ process.umask = function() { return 0; };
 
 },{}],159:[function(require,module,exports){
 var React = require('react');
-<<<<<<< HEAD
 var ListItem = require('./ListItem.jsx');
 
 var List = React.createClass({
@@ -19148,80 +19147,3 @@ ReactDOM.render(React.createElement(ListManager, { title: 'ToDo-List' }), docume
 ReactDOM.render(React.createElement(ListManager, { title: 'Christmas List', headingColor: '#b31217' }), document.getElementById('Christmas'));
 
 },{"./components/ListManager.jsx":161,"react":157,"react-dom":1}]},{},[162]);
-=======
-
-var Panel = React.createClass({
-  displayName: "Panel",
-
-  render: function () {
-
-    var PanelStyle = {
-      marginTop: 10
-    };
-    var lineOneStyle = {};
-    var lineTwoStyle = {};
-    // Allows user to select backgorund color
-    if (this.props.color) {
-      PanelStyle.background = this.props.color;
-    }
-    // allow use to selct text color
-    if (this.props.textcolor) {
-      PanelStyle.color = this.props.textcolor;
-    }
-
-    if (this.props.firstLineWeight) {
-      lineOneStyle.fontWeight = this.props.firstLineWeight;
-    }
-
-    // draws main panel
-    return React.createElement(
-      "div",
-      { style: PanelStyle, className: "panel panel-default col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1" },
-      React.createElement(
-        "div",
-        { className: "row" },
-        React.createElement(
-          "div",
-          { className: "col-md-12" },
-          React.createElement(
-            "div",
-            { style: lineOneStyle, className: "row" },
-            React.createElement(
-              "h3",
-              null,
-              this.props.title
-            )
-          ),
-          React.createElement(
-            "div",
-            { style: lineTwoStyle, className: "row" },
-            React.createElement(
-              "h5",
-              null,
-              React.createElement(
-                "small",
-                null,
-                this.props.content
-              )
-            )
-          )
-        )
-      )
-    );
-  }
-
-});
-module.exports = Panel;
-
-},{"react":157}],160:[function(require,module,exports){
-var React = require('react');
-var ReactDOM = require('react-dom');
-var Panel = require('./components/panel.jsx');
-
-ReactDOM.render(React.createElement(Panel, { title: '20', content: 'New followers added this month', firstLineWeight: '1' }), document.getElementById('basicPanel1'));
-ReactDOM.render(React.createElement(Panel, { title: '$1250', content: 'Average Montly Income' }), document.getElementById('basicPanel2'));
-ReactDOM.render(React.createElement(Panel, { title: '$13865', content: 'Yearly Income Goal' }), document.getElementById('basicPanel3'));
-ReactDOM.render(React.createElement(Panel, { title: '18', content: 'Paris', color: 'orange', textcolor: 'white' }), document.getElementById('basicPanel4'));
-
-},{"./components/panel.jsx":159,"react":157,"react-dom":1}]},{},[160]);
->>>>>>> b8df889db42223c31dde7ca3853aed94bdfb8500
