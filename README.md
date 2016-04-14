@@ -15,6 +15,6 @@ Open terminal and type:``` $ git clone https://github.com/Andy4932/React-Dev-Env
  if you do not have npm go to [Install Node.js here](https://nodejs.org/en/) or you can open terminal and type ```$ brew install node.``` using homebrew. test is by typing these two commands ``` $ node -v``` and ```$ npm -v```.
 
 ####Step 3:
-The best part click on the index.html file in the directory. You should see something like:
-
+The best part click on the index.html file in the directory. You should see something like: ![alt text][logo]
+[logo]:https://github.com/Andy4932/React-Dev-Environment/master/ScreenShot.jpg
 
